@@ -1,0 +1,152 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%% Copyright 2010-2011 Mark Liu (markwayneliu@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,a4paper]{moderncv}
+\usepackage{moderntimeline}
+\usepackage{verbatim}
+% moderncv themes
+\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}           % if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+%\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+\usepackage{comment}
+
+% personal data
+\firstname{Anil}
+\familyname{Shanbhag}
+
+
+\address{550 Memorial Drive 21E4, Cambridge, MA, 02139}    % optional, remove the line if not wanted
+\mobile{(+1) 857.253.8697}                    % optional, remove the line if not wanted
+\email{anilashanbhag@gmail.com}                      % optional, remove the line if not wanted
+\homepage{https://anilshanbhag.in/}               % optional, remove the line if not wanted
+\title{Curriculum Vitae}
+
+
+\begin{document}
+\maketitle
+\vspace*{-15mm}
+
+
+\section{Education}
+
+\cventry{2014 - 2020}{Ph.D.}{Electrical Engineering and Computer Science}{\newline Massachusetts Institute of Technology}{Cambridge, MA}{Thesis: Interactive Data Analytics using GPUs\\ Advisor: Prof. Samuel Madden}
+
+\cventry{2014 - 2016}{S.M.}{Electrical Engineering and Computer Science}{\newline Massachusetts Institute of Technology}{Cambridge, MA}{Thesis: An Adaptive Partitioning Scheme for Ad-Hoc and Time-Varying Database Analytics
+\\ Advisor: Prof. Samuel Madden}
+
+% \cventry{2013 - 2015}{M.Phil.}{Computer Science and Engineering}{the Chinese University of Hong Kong}{}{Thesis: Distributed Graph Computing Systems: Design, Implementation and Applications\\Advisor: Prof. James Cheng}
+
+\cventry{2010 - 2014}{B.Tech. (Honors)}{Computer Science and Engineering}{\newline Indian Institute of Technology Bombay}{India}{}{}
+
+
+\section{Research Interests}
+
+\cvline{}{Data Analytics, Query Processing, Performance Engineering}
+
+
+\section{Work Experience}
+
+
+\cventry{May, 2015 - August, 2015}{Software Engineer Intern}{Ads Infrastructure}{Google}{Mountain View, CA}{
+Mentor: Ben Handy
+\\ Worked on implementing dynamic memory reservation to avoid disk spillage of queries in F1. F1 is the database used to store all the ads data at Google.}
+\cventry{May, 2014 - August, 2014 May, 2013 - July, 2013}{Research Intern}{}{Microsoft Research}{Redmond, WA}{
+ Mentor: Dr. Srikanth Kandula
+ \\ Worked on application of sampling-based techniques for \textit{Approximate Query Processing} in \textit{Big Data} context. Incorporated sampling as a first-class operator in SCOPE (Cascades-based optimizer). Designed new sampling techniques, created transformation rules for commuting sampling operator with other operators. 
+}
+
+\section{Patent}
+
+\cvline{[1]}{\textbf{Controlling Approximations of Queries}, Srikanth Kandula, Surajit Chaudhuri, Bolin Ding, \underline{\textit{Anil Shanbhag}}, Aleksandar Vitorović, Matthaios Olma, Robert Grandl, US Patent 10496643, 2019}
+
+\section{Publications}
+
+
+\cvline{[1]}{\textbf{A Study of the Fundamental Performance Characteristics of GPUs and CPUs for Database Analytics}, \underline{\textit{Anil Shanbhag}}, Samuel Madden, Xiangyao Yu, In \textit{Proceedings of the International Conference on Management of Data (SIGMOD)}, 2020}
+\cvline{[2]}{\textbf{Large-Scale In-Memory Analytics on Intel Optane DC Persistent Memory
+}, \underline{\textit{Anil Shanbhag}}, Nesime Tatbul, David Cohen, Samuel Madden, In \textit{Proceedings of Workshop on Data Management on New Hardware (DaMoN))}, 2020}
+\cvline{[3]}{\textbf{Efficient Top-K Query Processing on Massively Parallel Hardware
+}, \underline{\textit{Anil Shanbhag}}, Holger Pirk, Samuel Madden, In \textit{Proceedings of the International Conference on Management of Data (SIGMOD)}, 2018}
+\cvline{[4]}{\textbf{Evaluating End-To-End Optimization for Data Analytics Applications in Weld
+}, Shoumik Palkar, James Thomas, Deepak Narayanan, Pratiksha Thaker, Rahul Palamuttam, Parimajan Negi, \underline{\textit{Anil Shanbhag}}, Malte Schwarzkopf, Holger Pirk, Saman Amarasinghe, Samuel Madden, Matei Zaharia, \textit{Proceedings of the VLDB Endowment (PVLDB)}, 2018}
+\cvline{[5]}{\textbf{A Robust Partitioning Scheme for Ad-Hoc Query Workloads
+}, \underline{\textit{Anil Shanbhag}}, Alekh Jindal, Samuel Madden, Jorge Quiane, Aaron J Elmore, In \textit{Proceedings of the Symposium on Cloud Computing (SoCC)}, 2017}
+\cvline{[6]}{\textbf{Weld: A Common Runtime for High Performance Data Analytics
+}, Shoumik Palkar, James Thomas, \underline{\textit{Anil Shanbhag}}, Deepak Narayanan, Holger Pirk, Malte Schwarzkopf, Saman Amarasinghe, Matei Zaharia, \textit{Conference on Innovative Data Systems Research (CIDR)
+}, 2017}
+\cvline{[7]}{\textbf{Locality-Adaptive Parallel Hash Joins using Hardware Transactional Memory
+}, \underline{\textit{Anil Shanbhag}}, Holger Pirk, Sam Madden, \textit{International Workshop on Accelerating Data Analysis and Data Management Systems}, 2016}
+\cvline{[8]}{ \textbf{Amoeba: a Shape Changing Storage System for Big Data}, \underline{\textit{Anil Shanbhag}}, Alekh Jindal, Yi Lu, Samuel Madden, \textit{Proceedings of the VLDB Endowment (PVLDB)}, 2016 (Demo)}
+\cvline{[9]}{\textbf{Quickr: Lazily Approximating Complex Adhoc Queries in Bigdata Clusters}, Srikanth Kandula, \underline{\textit{Anil Shanbhag}}, Aleksandar Vitorovic, Matthaios Olma, Robert Grandl, Surajit Chaudhuri, Bolin Ding
+, In \textit{Proceedings of International Conference on Management of Data (SIGMOD)}, 2016}
+\cvline{[10]}{\textbf{Optimizing Join Enumeration in Transformation-Based Query Optimizers}, \underline{\textit{Anil Shanbhag}}, S Sudarshan, \textit{Proceedings of the VLDB Endowment (PVLDB)}, 2014}
+% \cvline{[11]}{\textbf{Pregel Algorithms for Graph Connectivity Problems with Performance Guarantees}, Da Yan, James Cheng, Kai Xing, \underline{\textit{Yi Lu}}, Wilfred Ng, Yingyi Bu, \textit{Proceedings of the VLDB Endowment (PVLDB)}, Volume 7(14), Pages 1821-1832, 2014}
+% \cvline{[12]}{\textbf{Path Problems in Temporal Graphs}, Huanhuan Wu, James Cheng, Silu Huang, Yiping Ke, \underline{\textit{Yi Lu}}, Yanyan Xu, \textit{Proceedings of the VLDB Endowment (PVLDB)}, Volume 7(9), Pages 721-732, 2014}
+
+\section{Skills}
+\cvline{Programming}{C/C++, Python, Javascript, Java, GoLang}
+
+\section{Teaching}
+
+\cvline{Fall 2017}{Teaching Assistant, 6.830: Database Systems, MIT}
+\cvline{2012-2013}{Manager, Web and Coding Club, IIT-B}
+\cvline{Fall 2013}{Teaching Assistant, CS 305: Computer Architecture, IIT-B}
+\cvline{Fall 2012}{Teaching Assistant, PH 105: Modern Physics, IIT-B}
+% \item {Institute Cultural Web Nominee, IIT-B} \hfill{2011-2012}
+
+\section{Miscellaneous}
+
+\cventry{2018 - Ongoing}{Creator, Dictanote.co}{}{}{}{
+The Dictanote app lets journalists, lawyers, transcriptionists, etc. enhance their productivity by using their voice to type notes. Voice In Chrome Extension lets users use speech to text to dictate on any website like type emails in Gmail or write blog posts on Wordpress. Combined the two applications have over \textbf{150k} monthly active users.}
+
+\cvline{2016}{Was one of 8 board members of Sangam, the Indian students’ association at MIT which has over 800 participants in events throughout the year.}
+
+\cvline{2013}{Awarded \textbf{Institute Technical Color} at IIT-Bombay for outstanding work in the tech genre; awarded to top 7 out of 8000 total students}
+
+\cvline{2011}{Improved border corner rendering and interaction of dashed border style with other border styles in Mozilla Firefox as part of Google Summer of Code}
+
+
+% \textbf{Creator, Dictanote.co} \hfill {}\\
+% \begin{itemize2}
+%   \item The Dictanote app lets journalists, lawyers, transcriptionists, etc. enhance their productivity by using their voice to type notes.
+%   \item Voice In Chrome Extension lets users use speech to text to dictate on any website like type emails in Gmail or write blog posts on Wordpress.
+%   \item Combined the two applications have over \textbf{200k} monthly active users.
+% \end{itemize2}
+
+% \textbf{Co-Founder and Lead Developer, Recharge123.com} \hfill {2011 - 2012}\\
+% \begin{itemize}
+%   \item Recharge123 is a online recharge portal which provides a unified interface for mobile and DTH recharges. The portal targeted at merchants had a turnover of over INR 10 million in the first year of operations
+% \end{itemize}
+
+% \begin{itemize}
+%   \item Secured 24\textsuperscript{th} position at the Asia Regional Finals of ACM-ICPC 2013 (Amritapuri). Secured 10\textsuperscript{th} position in Asia Regionals Online Round 2013 (Kharagpur).
+%   \item Secured 1\textsuperscript{st} place in the Aakash Tablet App Development Contest for developing EduBucket, a Netflix for educational content
+%   \item Secured 1\textsuperscript{st} place in Yahoo HackU '12 for developing DriveStack, a cloud based utility app which unified various cloud storage services into one large cloud disk, thereby easing management of storage
+%   \item Secured 2\textsuperscript{nd} place in Yahoo HackU '13 for developing Time Glider, a visualization app which finds all mentions of a famous person or event (entity search) in news articles and shows them on an interactive timeline
+%   \item Finalist in Business Track in Eureka Business Plan Competition for our idea PeaPod, an affordable computer
+%   %\item Created Singing Electric Arc (plasma speaker) as a part of Technovation. The device used modulated electric arcs generated using high voltages to play music from mobile phone
+%   %\item Awarded NSS Special Mention for contribution towards social activities. Facilitated cloth donation drive and organised rubix cube solving workshop at campus school for the under privileged students
+% \end{itemize}
+
+%Footer
+% \begin{center}
+%   \begin{footnotesize}
+%     Last updated: \today \\
+% %    \href{\footerlink}{\texttt{\footerlink}}
+%   \end{footnotesize}
+% \end{center}
+
+\end{document}
